@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_routier">
+
+    <fragment
+        android:id="@+id/nav_aerien"
+        android:name="com.example.easytranzv3.ui.aerien.AerienTab"
+        android:label="Aerien"
+        tools:layout="@layout/tab_layout" />
+
+    <fragment
+        android:id="@+id/nav_fluvial"
+        android:name="com.example.easytranzv3.ui.fluvial.FluvialTab"
+        android:label="Fluvial" />
+
+    <fragment
+        android:id="@+id/nav_train"
+        android:name="com.example.easytranzv3.ui.train.TrainTab"
+        android:label="Ferroviaire"
+        tools:layout="@layout/tab_layout" />
+    <fragment
+        android:id="@+id/nav_routier"
+        android:name="com.example.easytranzv3.ui.routier.RoutierSelectionFragment"
+        android:label="Routier"
+        tools:layout="@layout/fragment_routier_selection" />
+</navigation>

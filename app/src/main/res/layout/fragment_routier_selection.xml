@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.routier.RoutierSelectionFragment">
+
+    <Button
+        android:id="@+id/btnGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="General"
+        app:layout_constraintBottom_toTopOf="@+id/btnAnimaux"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnimaux"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnAnimaux"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAnimaux"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animaux"
+        app:layout_constraintBottom_toTopOf="@+id/btnTdirigee"
+        app:layout_constraintEnd_toEndOf="@+id/btnTdirigee"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnTdirigee"
+        app:layout_constraintTop_toBottomOf="@+id/btnGeneral" />
+
+    <Button
+        android:id="@+id/btnTdirigee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperature Dirigee"
+        app:layout_constraintBottom_toTopOf="@+id/btnCiterne"
+        app:layout_constraintEnd_toEndOf="@+id/btnCiterne"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnCiterne"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnimaux" />
+
+    <Button
+        android:id="@+id/btnCiterne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Citerne"
+        app:layout_constraintBottom_toTopOf="@+id/btnVroulant"
+        app:layout_constraintEnd_toEndOf="@+id/btnVroulant"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnVroulant"
+        app:layout_constraintTop_toBottomOf="@+id/btnTdirigee" />
+
+    <Button
+        android:id="@+id/btnVroulant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicule Roulant"
+        app:layout_constraintBottom_toTopOf="@+id/btnIndivisible"
+        app:layout_constraintEnd_toEndOf="@+id/btnIndivisible"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnIndivisible"
+        app:layout_constraintTop_toBottomOf="@+id/btnCiterne" />
+
+    <Button
+        android:id="@+id/btnIndivisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marchandise Indivisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnCMR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVroulant" />
+
+    <Button
+        android:id="@+id/btnCMR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CMR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIndivisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
